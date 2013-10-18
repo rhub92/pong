@@ -7,11 +7,8 @@
  * Description: Implements a subset of the pong game
  */
 
-
-
 #ifndef _PONG_H
 #define _PONG_H
-
 
 #define WINDOW_WIDTH 300
 #define WINDOW_HEIGHT 300
@@ -19,18 +16,15 @@
 #define FALSE 0
 
 typedef struct {
-int x;
-int y;
-	} vector2d_t;
+    int x;
+    int y;
+} vector2d_t;
 	
 typedef struct {
-vector2d_t location;
-unsigned char radius;
-vector2d_t velocity;
+    vector2d_t location;
+    unsigned char radius;
+    vector2d_t velocity;
 } ball_t;
-
-
-
 
 ball_t createBall(int xPos, int yPos, int xVel, int yVel, unsigned char radius);
 
